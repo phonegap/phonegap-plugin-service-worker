@@ -55,6 +55,7 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     NSLog(@"%@", [error description]);
+    self.reject([error description]);
 }
 
 @end
